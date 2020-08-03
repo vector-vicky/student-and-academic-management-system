@@ -1,0 +1,1 @@
+The html pages for logging in,adding a student and other functions are included inside Student folder.All the necassary php files are also present inside Student folder.The css file styles is also present in Student folder.Also included is a sample MySQL database used for storing student records.

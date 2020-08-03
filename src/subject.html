@@ -1,0 +1,155 @@
+<html>
+<head>
+    <title>Subject details</title>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        
+        body {
+            font: 14px sans-serif;
+            
+            background: url(use10.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+        }
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+font-weight: bold;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <font size="9" color="#0066ff">
+            <center>
+                ENTER SUBJECT DETAILS
+            </center>
+        </font>
+    </div>
+    <br style="line-height: 6;">
+<div class="container">
+    <form method="post" action="subjconnect.php">
+        
+            <font size="4">
+<div class="row">
+    <div class="col-25">
+      <label for="Department_number">Department number</label>
+    </div>
+    <div class="col-75">
+
+                <input type="text" id="Department_number" name="Department_number" value="" required>
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="Subject_code">Subject code</label>
+    </div>
+    <div class="col-75">
+                <input type="text" id="Subject_code" name="Subject_code" value="" required>
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="Subject_name">Subject name</label>
+    </div>
+    <div class="col-75">
+                <input type="text" id="Subject_name" name="Subject_name" value="" required>
+</div>
+  </div>
+
+<div class="row">
+    <div class="col-25">
+      <label for="Credits">Credits</label>
+    </div>
+    <div class="col-75">
+                <input type="text" id="Credits" name="Credits" value="" required>
+</div>
+  </div>
+
+<div class="row">
+    <div class="col-25">
+      <label for="Semester">Semester</label>
+    </div>
+    <div class="col-75">
+                <input type="text" id="Semester" name="Semester" value="" required>
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="USN"></label>
+    </div>
+    <div class="col-75">
+
+
+                <input type="submit" value="SUBMIT" name="" class="btn btn-primary">
+</div>
+  </div>
+            </font>
+        
+    </form>
+</div>
+</body>
+</html>

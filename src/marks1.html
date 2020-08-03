@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Enter marks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body {
+            font: 14px sans-serif;
+            
+            background: url(use10.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+        }
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  font-weight: bold;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <font size="9" color="#0066ff">
+            <center>
+                ENTER STUDENTS' MARKS
+            </center>
+        </font>
+    </div>
+    <br style="line-height: 6;">
+<div class="container">
+    <form method="post" action="connect2.php">
+        
+            <font size="4">
+<div class="row">
+    <div class="col-25">
+      <label for="USN">USN</label>
+    </div>
+    <div class="col-75">
+                <input type="text" name="USN" value="" required>
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="Subject_code">Subject code</label>
+    </div>
+    <div class="col-75">
+                <input type="text" id="Subject_code" name="Subject_code" value="" required>
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="First_internals">First internals</label>
+    </div>
+    <div class="col-75">
+                <input type="text" name="First_internals" id="First_internals" value="" required>
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="Second_internals">Second internals</label>
+    </div>
+    <div class="col-75">
+                <input type="text" name="Second_internals" id="Second_internals" value="" required>
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="Third_internals">Third internals</label>
+    </div>
+    <div class="col-75">
+                <input type="text" name="Third_internals" value="" required>
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="Final_internals">Final internals</label>
+    </div>
+    <div class="col-75">
+                <input type="text" name="Final_internals"id="Final_internals" value="0" required>
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="Result">Result</label>
+    </div>
+    <div class="col-75">
+                <input type="radio" id="Result" name="Result" value="P" checked>Pass &ensp; <input type="radio" name="Result" value="F">Fail
+</div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="USN"></label>
+    </div>
+    <div class="col-75">
+
+                <p><input type="submit" name="SEND" value="SUBMIT" class="btn btn-primary" /></p><br style="line-height: 1;"> 
+</div>
+  </div>
+            </font>
+        
+    </form>
+</div>
+</body>
+</html>
